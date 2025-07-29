@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Soto Acevedo - Virtual Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Pablo Soto Acevedo</h1>
+    <nav>
+      <a href="#services" class="mx-2 hover:underline">Services</a>
+      <a href="#portfolio" class="mx-2 hover:underline">Portfolio</a>
+      <a href="#testimonials" class="mx-2 hover:underline">Testimonials</a>
+      <a href="#contact" class="mx-2 hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 bg-blue-100">
+    <h2 class="text-3xl font-bold">Reliable Virtual Assistant Services</h2>
+    <p class="mt-2 text-lg">Helping you with admin, social media, and customer support so you can focus on growth.</p>
+    <p class="mt-2 font-semibold">Hourly Rate: $12/hr</p>
+    <a href="#contact" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg">Hire Me Today</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12 px-4 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="bg-white shadow p-6 rounded-xl">
+      <h3 class="text-xl font-semibold mb-2">Administrative Support</h3>
+      <ul class="list-disc ml-5">
+        <li>Email management</li>
+        <li>Data entry</li>
+        <li>Travel arrangements</li>
+      </ul>
+    </div>
+    <div class="bg-white shadow p-6 rounded-xl">
+      <h3 class="text-xl font-semibold mb-2">Social Media & Marketing</h3>
+      <ul class="list-disc ml-5">
+        <li>Content creation</li>
+        <li>Lead generation</li>
+        <li>Basic graphic design</li>
+      </ul>
+    </div>
+    <div class="bg-white shadow p-6 rounded-xl">
+      <h3 class="text-xl font-semibold mb-2">Customer Service & Research</h3>
+      <ul class="list-disc ml-5">
+        <li>Customer support</li>
+        <li>Online research</li>
+        <li>Transcription services</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-12 bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold mb-6">Portfolio</h3>
+    <p class="text-gray-600">Upload and showcase samples of your work here.</p>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-12 text-center">
+    <h3 class="text-2xl font-bold mb-6">Testimonials</h3>
+    <p class="text-gray-600">Client feedback will be displayed here.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-blue-50 text-center">
+    <h3 class="text-2xl font-bold mb-6">Contact Me</h3>
+    <form class="max-w-md mx-auto bg-white shadow p-6 rounded-xl space-y-4" action="mailto:pablosotoacevedo@outlook.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" class="w-full border p-2 rounded" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full border p-2 rounded" required>
+      <textarea name="message" placeholder="Your Message" class="w-full border p-2 rounded" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
+    </form>
+    <p class="mt-4">Or contact me directly:</p>
+    <a href="mailto:pablosotoacevedo@outlook.com" class="text-blue-600">Email</a> |
+    <a href="https://wa.me/50686426776" class="text-green-600">WhatsApp</a>
+  </section>
+
+  <footer class="text-center py-4 text-gray-500">
+    &copy; 2025 Pablo Soto Acevedo - Virtual Assistant
+  </footer>
+</body>
+</html>
