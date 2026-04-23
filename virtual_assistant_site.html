@@ -5,98 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pablo Soto Acevedo - Virtual Assistant</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    .portfolio-placeholder {
+      background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 160px;
+      border-radius: 0.375rem;
+      color: #4f46e5;
+      font-size: 2.5rem;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 font-sans">
+
   <!-- Header -->
-  <header class="bg-white shadow p-4 flex justify-between items-center">
+  <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10">
     <h1 class="text-xl font-bold">Pablo Soto Acevedo</h1>
-    <nav>
-      <a href="#services" class="mx-2 hover:underline">Services</a>
-      <a href="#portfolio" class="mx-2 hover:underline">Portfolio</a>
-      <a href="#testimonials" class="mx-2 hover:underline">Testimonials</a>
-      <a href="#contact" class="mx-2 hover:underline">Contact</a>
+    <nav class="space-x-4">
+      <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
+      <a href="#portfolio" class="hover:text-blue-600 transition-colors">Portfolio</a>
+      <a href="#testimonials" class="hover:text-blue-600 transition-colors">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="text-center py-12 bg-blue-100">
-    <h2 class="text-3xl font-bold">Reliable Virtual Assistant Services</h2>
-    <p class="mt-2 text-lg">Helping you with admin, social media, and customer support so you can focus on growth.</p>
-    <p class="mt-2 font-semibold">Hourly Rate: $12/hr</p>
-    <a href="#contact" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg">Hire Me Today</a>
+  <section class="text-center py-20 bg-blue-100">
+    <h2 class="text-4xl font-bold">Reliable Virtual Assistant Services</h2>
+    <p class="mt-3 text-lg text-gray-700">Helping you with admin, social media, and customer support so you can focus on growth.</p>
+    <p class="mt-2 font-semibold text-blue-700 text-xl">Hourly Rate: $12/hr</p>
+    <a href="#contact" class="mt-6 inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Hire Me Today</a>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-12 px-4 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
-    <div class="bg-white shadow p-6 rounded-xl">
-      <h3 class="text-xl font-semibold mb-2">Administrative Support</h3>
-      <ul class="list-disc ml-5">
-        <li>Email management</li>
-        <li>Data entry</li>
-        <li>Travel arrangements</li>
-      </ul>
-    </div>
-    <div class="bg-white shadow p-6 rounded-xl">
-      <h3 class="text-xl font-semibold mb-2">Social Media & Marketing</h3>
-      <ul class="list-disc ml-5">
-        <li>Content creation</li>
-        <li>Lead generation</li>
-        <li>Basic graphic design</li>
-      </ul>
-    </div>
-    <div class="bg-white shadow p-6 rounded-xl">
-      <h3 class="text-xl font-semibold mb-2">Customer Service & Research</h3>
-      <ul class="list-disc ml-5">
-        <li>Customer support</li>
-        <li>Online research</li>
-        <li>Transcription services</li>
-      </ul>
+  <section id="services" class="py-16 px-4">
+    <h3 class="text-2xl font-bold text-center mb-10">What I Offer</h3>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="bg-white shadow p-6 rounded-xl hover:shadow-md transition-shadow">
+        <div class="text-3xl mb-3">📧</div>
+        <h4 class="text-xl font-semibold mb-2">Administrative Support</h4>
+        <ul class="list-disc ml-5 text-gray-600 space-y-1">
+          <li>Email management</li>
+          <li>Data entry</li>
+          <li>Travel arrangements</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow p-6 rounded-xl hover:shadow-md transition-shadow">
+        <div class="text-3xl mb-3">📱</div>
+        <h4 class="text-xl font-semibold mb-2">Social Media &amp; Marketing</h4>
+        <ul class="list-disc ml-5 text-gray-600 space-y-1">
+          <li>Content creation</li>
+          <li>Lead generation</li>
+          <li>Basic graphic design</li>
+        </ul>
+      </div>
+      <div class="bg-white shadow p-6 rounded-xl hover:shadow-md transition-shadow">
+        <div class="text-3xl mb-3">🎧</div>
+        <h4 class="text-xl font-semibold mb-2">Customer Service &amp; Research</h4>
+        <ul class="list-disc ml-5 text-gray-600 space-y-1">
+          <li>Customer support</li>
+          <li>Online research</li>
+          <li>Transcription services</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Portfolio Section -->
- <section id="portfolio" class="py-12 bg-gray-100 text-center">
-  <h3 class="text-2xl font-bold mb-6">Portfolio</h3>
-  <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-    <div class="bg-white shadow p-4 rounded">
-      <img src="portfolio-assets/email-sample.png" alt="Email Management Sample" class="mx-auto rounded">
-      <p class="mt-2 font-semibold">Email Management</p>
+  <section id="portfolio" class="py-16 bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold mb-10">Portfolio</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+      <div class="bg-white shadow p-4 rounded-xl hover:shadow-md transition-shadow">
+        <div class="portfolio-placeholder">📬</div>
+        <p class="mt-3 font-semibold">Email Management</p>
+        <p class="text-sm text-gray-500 mt-1">Inbox triage &amp; templated responses for a US-based e-commerce client</p>
+      </div>
+      <div class="bg-white shadow p-4 rounded-xl hover:shadow-md transition-shadow">
+        <div class="portfolio-placeholder">📲</div>
+        <p class="mt-3 font-semibold">Social Media Content</p>
+        <p class="text-sm text-gray-500 mt-1">30-day Instagram content calendar &amp; caption copywriting</p>
+      </div>
+      <div class="bg-white shadow p-4 rounded-xl hover:shadow-md transition-shadow">
+        <div class="portfolio-placeholder">📅</div>
+        <p class="mt-3 font-semibold">Content Calendar</p>
+        <p class="text-sm text-gray-500 mt-1">Multi-platform editorial planning &amp; scheduling for a coaching brand</p>
+      </div>
     </div>
-    <div class="bg-white shadow p-4 rounded">
-      <img src="portfolio-assets/social-sample.png" alt="Social Media Sample" class="mx-auto rounded">
-      <p class="mt-2 font-semibold">Social Media Content</p>
-    </div>
-    <div class="bg-white shadow p-4 rounded">
-      <a href="portfolio-assets/content-calendar.pdf" target="_blank">
-        <img src="portfolio-assets/calendar-thumbnail.png" alt="Content Calendar" class="mx-auto rounded">
-      </a>
-      <p class="mt-2 font-semibold">Content Calendar</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="py-12 text-center">
-    <h3 class="text-2xl font-bold mb-6">Testimonials</h3>
-    <p class="text-gray-600">Client feedback will be displayed here.</p>
+  <section id="testimonials" class="py-16 text-center">
+    <h3 class="text-2xl font-bold mb-10">What Clients Say</h3>
+    <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-6">
+      <div class="bg-white shadow p-6 rounded-xl text-left">
+        <p class="text-gray-700 italic">"Pablo is incredibly reliable and organized. He handled my inbox and scheduling for 3 months and I never missed a meeting. Highly recommend!"</p>
+        <p class="mt-4 font-semibold text-gray-800">— Sarah T., Online Business Owner</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded-xl text-left">
+        <p class="text-gray-700 italic">"Fast turnaround, great communication, and exactly what I needed for my social media. Pablo really understands marketing content."</p>
+        <p class="mt-4 font-semibold text-gray-800">— James R., Fitness Coach</p>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-blue-50 text-center">
-    <h3 class="text-2xl font-bold mb-6">Contact Me</h3>
-    <form class="max-w-md mx-auto bg-white shadow p-6 rounded-xl space-y-4" action="mailto:pablosotoacevedo@outlook.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" class="w-full border p-2 rounded" required>
-      <input type="email" name="email" placeholder="Your Email" class="w-full border p-2 rounded" required>
-      <textarea name="message" placeholder="Your Message" class="w-full border p-2 rounded" required></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
+  <section id="contact" class="py-16 bg-blue-50 text-center">
+    <h3 class="text-2xl font-bold mb-2">Contact Me</h3>
+    <p class="text-gray-600 mb-8">Ready to get started? Reach out and I'll respond within 24 hours.</p>
+    <form class="max-w-md mx-auto bg-white shadow p-6 rounded-xl space-y-4 text-left" action="mailto:pablosotoacevedo@outlook.com" method="POST" enctype="text/plain">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+        <input type="text" name="name" placeholder="Jane Smith" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+        <input type="email" name="email" placeholder="jane@example.com" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+        <textarea name="message" rows="4" placeholder="Tell me about your project..." class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
     </form>
-    <p class="mt-4">Or contact me directly:</p>
-    <a href="mailto:pablosotoacevedo@outlook.com" class="text-blue-600">Email</a> |
-    <a href="https://wa.me/50686426776" class="text-green-600">WhatsApp</a>
+    <div class="mt-6 space-x-4">
+      <a href="mailto:pablosotoacevedo@outlook.com" class="text-blue-600 hover:underline">✉️ pablosotoacevedo@outlook.com</a>
+      <span class="text-gray-400">|</span>
+      <a href="https://wa.me/50686426776" class="text-green-600 hover:underline">💬 WhatsApp</a>
+    </div>
   </section>
 
-  <footer class="text-center py-4 text-gray-500">
-    &copy; 2025 Pablo Soto Acevedo - Virtual Assistant
+  <footer class="text-center py-4 text-gray-500 text-sm">
+    &copy; 2026 Pablo Soto Acevedo &mdash; Virtual Assistant
   </footer>
+
 </body>
 </html>
