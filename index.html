@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Pablo VA">
   <title>Pablo Soto Acevedo - Virtual Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
   <style>
     html { scroll-behavior: smooth; }
@@ -24,7 +30,7 @@
   <!-- Header -->
   <header class="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-10">
     <h1 class="text-xl font-bold">Pablo Soto Acevedo</h1>
-    <nav class="space-x-4">
+    <nav class="space-x-4 text-sm">
       <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
       <a href="#portfolio" class="hover:text-blue-600 transition-colors">Portfolio</a>
       <a href="#testimonials" class="hover:text-blue-600 transition-colors">Testimonials</a>
@@ -141,5 +147,10 @@
     &copy; 2026 Pablo Soto Acevedo &mdash; Virtual Assistant
   </footer>
 
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
